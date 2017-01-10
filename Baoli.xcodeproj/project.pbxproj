@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3284043B1E200822003D0CB3 /* BLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328404391E200822003D0CB3 /* BLLoginViewController.m */; };
+		3284043C1E200822003D0CB3 /* BLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3284043A1E200822003D0CB3 /* BLLoginViewController.xib */; };
+		328404401E200B2C003D0CB3 /* BLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284043E1E200B2C003D0CB3 /* BLRegisterViewController.m */; };
+		328404411E200B2C003D0CB3 /* BLRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3284043F1E200B2C003D0CB3 /* BLRegisterViewController.xib */; };
+		328404451E200B7A003D0CB3 /* BLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 328404441E200B7A003D0CB3 /* BLTextField.m */; };
+		328404491E2010E8003D0CB3 /* BLFindPassWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328404471E2010E8003D0CB3 /* BLFindPassWordController.m */; };
+		3284044A1E2010E8003D0CB3 /* BLFindPassWordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 328404481E2010E8003D0CB3 /* BLFindPassWordController.xib */; };
+		3284044E1E20125C003D0CB3 /* BLLoginFastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284044C1E20125C003D0CB3 /* BLLoginFastController.m */; };
+		3284044F1E20125C003D0CB3 /* BLLoginFastController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3284044D1E20125C003D0CB3 /* BLLoginFastController.xib */; };
+		328404561E2013A0003D0CB3 /* BLHomeInfoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 328404541E2013A0003D0CB3 /* BLHomeInfoViewCell.m */; };
+		328404571E2013A0003D0CB3 /* BLHomeInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 328404551E2013A0003D0CB3 /* BLHomeInfoViewCell.xib */; };
+		55ADFB69237F41F2EC2EFEFC /* libPods-Baoli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088B62698E3D47D416CCA6F7 /* libPods-Baoli.a */; };
+		B0F53BD51E232EF600F8A3A9 /* BLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */; };
+		B0F53BD61E232EF600F8A3A9 /* BLMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */; };
+		B0F53BDA1E237B1200F8A3A9 /* BLFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BD81E237B1200F8A3A9 /* BLFeedbackViewController.m */; };
+		B0F53BDB1E237B1200F8A3A9 /* BLFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BD91E237B1200F8A3A9 /* BLFeedbackViewController.xib */; };
+		B0F53BE11E23BDAB00F8A3A9 /* BLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BDF1E23BDAB00F8A3A9 /* BLSettingViewController.m */; };
+		B0F53BE21E23BDAB00F8A3A9 /* BLSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BE01E23BDAB00F8A3A9 /* BLSettingViewController.xib */; };
+		CE6D24371E1B6D580069B5FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24361E1B6D580069B5FC /* main.m */; };
+		CE6D243A1E1B6D580069B5FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24391E1B6D580069B5FC /* AppDelegate.m */; };
+		CE6D243D1E1B6D580069B5FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D243C1E1B6D580069B5FC /* ViewController.m */; };
+		CE6D24401E1B6D580069B5FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6D243E1E1B6D580069B5FC /* Main.storyboard */; };
+		CE6D24421E1B6D580069B5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6D24411E1B6D580069B5FC /* Assets.xcassets */; };
+		CE6D24451E1B6D580069B5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6D24431E1B6D580069B5FC /* LaunchScreen.storyboard */; };
+		CE6D24501E1B6D580069B5FC /* BaoliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D244F1E1B6D580069B5FC /* BaoliTests.m */; };
+		CE6D245B1E1B6D580069B5FC /* BaoliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D245A1E1B6D580069B5FC /* BaoliUITests.m */; };
+		CE6D24E81E1B70980069B5FC /* NSDictionary+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24CF1E1B70980069B5FC /* NSDictionary+Extra.m */; };
+		CE6D24E91E1B70980069B5FC /* NSString+DDFExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24D11E1B70980069B5FC /* NSString+DDFExtra.m */; };
+		CE6D24EB1E1B70980069B5FC /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24D51E1B70980069B5FC /* UIColor+Extend.m */; };
+		CE6D24EC1E1B70980069B5FC /* UIColor+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24D71E1B70980069B5FC /* UIColor+Extra.m */; };
+		CE6D24ED1E1B70980069B5FC /* UIFont+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24D91E1B70980069B5FC /* UIFont+Extra.m */; };
+		CE6D24EE1E1B70980069B5FC /* BLApplaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24DD1E1B70980069B5FC /* BLApplaunch.m */; };
+		CE6D24EF1E1B70980069B5FC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24E31E1B70980069B5FC /* BaseViewController.m */; };
+		CE6D24F01E1B70980069B5FC /* BLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24E51E1B70980069B5FC /* BLNavigationController.m */; };
+		CE6D24F11E1B70980069B5FC /* BLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24E71E1B70980069B5FC /* BLTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE6D244C1E1B6D580069B5FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6D242A1E1B6D580069B5FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6D24311E1B6D580069B5FC;
+			remoteInfo = Baoli;
+		};
+		CE6D24571E1B6D580069B5FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6D242A1E1B6D580069B5FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6D24311E1B6D580069B5FC;
+			remoteInfo = Baoli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		088B62698E3D47D416CCA6F7 /* libPods-Baoli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baoli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		328404381E200822003D0CB3 /* BLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLoginViewController.h; sourceTree = "<group>"; };
+		328404391E200822003D0CB3 /* BLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLoginViewController.m; sourceTree = "<group>"; };
+		3284043A1E200822003D0CB3 /* BLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLLoginViewController.xib; sourceTree = "<group>"; };
+		3284043D1E200B2C003D0CB3 /* BLRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLRegisterViewController.h; sourceTree = "<group>"; };
+		3284043E1E200B2C003D0CB3 /* BLRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLRegisterViewController.m; sourceTree = "<group>"; };
+		3284043F1E200B2C003D0CB3 /* BLRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLRegisterViewController.xib; sourceTree = "<group>"; };
+		328404431E200B7A003D0CB3 /* BLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTextField.h; sourceTree = "<group>"; };
+		328404441E200B7A003D0CB3 /* BLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTextField.m; sourceTree = "<group>"; };
+		328404461E2010E8003D0CB3 /* BLFindPassWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFindPassWordController.h; sourceTree = "<group>"; };
+		328404471E2010E8003D0CB3 /* BLFindPassWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFindPassWordController.m; sourceTree = "<group>"; };
+		328404481E2010E8003D0CB3 /* BLFindPassWordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFindPassWordController.xib; sourceTree = "<group>"; };
+		3284044B1E20125C003D0CB3 /* BLLoginFastController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLoginFastController.h; sourceTree = "<group>"; };
+		3284044C1E20125C003D0CB3 /* BLLoginFastController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLoginFastController.m; sourceTree = "<group>"; };
+		3284044D1E20125C003D0CB3 /* BLLoginFastController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLLoginFastController.xib; sourceTree = "<group>"; };
+		328404531E2013A0003D0CB3 /* BLHomeInfoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHomeInfoViewCell.h; sourceTree = "<group>"; };
+		328404541E2013A0003D0CB3 /* BLHomeInfoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHomeInfoViewCell.m; sourceTree = "<group>"; };
+		328404551E2013A0003D0CB3 /* BLHomeInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLHomeInfoViewCell.xib; sourceTree = "<group>"; };
+		7358993828B5D5F8922ADAA1 /* Pods-Baoli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baoli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baoli/Pods-Baoli.debug.xcconfig"; sourceTree = "<group>"; };
+		8E38D3A0E8D03AA50F9AF5A7 /* Pods-Baoli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baoli.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baoli/Pods-Baoli.release.xcconfig"; sourceTree = "<group>"; };
+		B0F53BD21E232EF600F8A3A9 /* BLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMineViewController.h; sourceTree = "<group>"; };
+		B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMineViewController.m; sourceTree = "<group>"; };
+		B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMineViewController.xib; sourceTree = "<group>"; };
+		B0F53BD71E237B1200F8A3A9 /* BLFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFeedbackViewController.h; sourceTree = "<group>"; };
+		B0F53BD81E237B1200F8A3A9 /* BLFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFeedbackViewController.m; sourceTree = "<group>"; };
+		B0F53BD91E237B1200F8A3A9 /* BLFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFeedbackViewController.xib; sourceTree = "<group>"; };
+		B0F53BDE1E23BDAB00F8A3A9 /* BLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSettingViewController.h; sourceTree = "<group>"; };
+		B0F53BDF1E23BDAB00F8A3A9 /* BLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSettingViewController.m; sourceTree = "<group>"; };
+		B0F53BE01E23BDAB00F8A3A9 /* BLSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSettingViewController.xib; sourceTree = "<group>"; };
+		CE6D24321E1B6D580069B5FC /* Baoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6D24361E1B6D580069B5FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE6D24381E1B6D580069B5FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE6D24391E1B6D580069B5FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE6D243B1E1B6D580069B5FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE6D243C1E1B6D580069B5FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE6D243F1E1B6D580069B5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE6D24411E1B6D580069B5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE6D24441E1B6D580069B5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE6D24461E1B6D580069B5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6D244B1E1B6D580069B5FC /* BaoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaoliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6D244F1E1B6D580069B5FC /* BaoliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoliTests.m; sourceTree = "<group>"; };
+		CE6D24511E1B6D580069B5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6D24561E1B6D580069B5FC /* BaoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaoliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6D245A1E1B6D580069B5FC /* BaoliUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoliUITests.m; sourceTree = "<group>"; };
+		CE6D245C1E1B6D580069B5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6D24CE1E1B70980069B5FC /* NSDictionary+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extra.h"; sourceTree = "<group>"; };
+		CE6D24CF1E1B70980069B5FC /* NSDictionary+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extra.m"; sourceTree = "<group>"; };
+		CE6D24D01E1B70980069B5FC /* NSString+DDFExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDFExtra.h"; sourceTree = "<group>"; };
+		CE6D24D11E1B70980069B5FC /* NSString+DDFExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDFExtra.m"; sourceTree = "<group>"; };
+		CE6D24D41E1B70980069B5FC /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		CE6D24D51E1B70980069B5FC /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		CE6D24D61E1B70980069B5FC /* UIColor+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extra.h"; sourceTree = "<group>"; };
+		CE6D24D71E1B70980069B5FC /* UIColor+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extra.m"; sourceTree = "<group>"; };
+		CE6D24D81E1B70980069B5FC /* UIFont+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extra.h"; sourceTree = "<group>"; };
+		CE6D24D91E1B70980069B5FC /* UIFont+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extra.m"; sourceTree = "<group>"; };
+		CE6D24DC1E1B70980069B5FC /* BLApplaunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLApplaunch.h; sourceTree = "<group>"; };
+		CE6D24DD1E1B70980069B5FC /* BLApplaunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLApplaunch.m; sourceTree = "<group>"; };
+		CE6D24DE1E1B70980069B5FC /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		CE6D24DF1E1B70980069B5FC /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		CE6D24E21E1B70980069B5FC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CE6D24E31E1B70980069B5FC /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CE6D24E41E1B70980069B5FC /* BLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNavigationController.h; sourceTree = "<group>"; };
+		CE6D24E51E1B70980069B5FC /* BLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNavigationController.m; sourceTree = "<group>"; };
+		CE6D24E61E1B70980069B5FC /* BLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTableViewController.h; sourceTree = "<group>"; };
+		CE6D24E71E1B70980069B5FC /* BLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE6D242F1E1B6D580069B5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55ADFB69237F41F2EC2EFEFC /* libPods-Baoli.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6D24481E1B6D580069B5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6D24531E1B6D580069B5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A822617075B53790D5636CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7358993828B5D5F8922ADAA1 /* Pods-Baoli.debug.xcconfig */,
+				8E38D3A0E8D03AA50F9AF5A7 /* Pods-Baoli.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		328404341E2007E1003D0CB3 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		328404351E2007EE003D0CB3 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				328404581E201501003D0CB3 /* Record */,
+				328404501E201372003D0CB3 /* Home */,
+				328404361E20080D003D0CB3 /* Login */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		328404361E20080D003D0CB3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				328404421E200B5E003D0CB3 /* View */,
+				328404371E20080D003D0CB3 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		328404371E20080D003D0CB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				328404381E200822003D0CB3 /* BLLoginViewController.h */,
+				328404391E200822003D0CB3 /* BLLoginViewController.m */,
+				3284043A1E200822003D0CB3 /* BLLoginViewController.xib */,
+				3284043D1E200B2C003D0CB3 /* BLRegisterViewController.h */,
+				3284043E1E200B2C003D0CB3 /* BLRegisterViewController.m */,
+				3284043F1E200B2C003D0CB3 /* BLRegisterViewController.xib */,
+				328404461E2010E8003D0CB3 /* BLFindPassWordController.h */,
+				328404471E2010E8003D0CB3 /* BLFindPassWordController.m */,
+				328404481E2010E8003D0CB3 /* BLFindPassWordController.xib */,
+				3284044B1E20125C003D0CB3 /* BLLoginFastController.h */,
+				3284044C1E20125C003D0CB3 /* BLLoginFastController.m */,
+				3284044D1E20125C003D0CB3 /* BLLoginFastController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		328404421E200B5E003D0CB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				328404431E200B7A003D0CB3 /* BLTextField.h */,
+				328404441E200B7A003D0CB3 /* BLTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		328404501E201372003D0CB3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				328404511E201372003D0CB3 /* Controller */,
+				328404521E201372003D0CB3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		328404511E201372003D0CB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0F53BDD1E23BC5400F8A3A9 /* parking */,
+				B0F53BDC1E23BBF900F8A3A9 /* mine */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		328404521E201372003D0CB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				328404531E2013A0003D0CB3 /* BLHomeInfoViewCell.h */,
+				328404541E2013A0003D0CB3 /* BLHomeInfoViewCell.m */,
+				328404551E2013A0003D0CB3 /* BLHomeInfoViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		328404581E201501003D0CB3 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				328404591E201501003D0CB3 /* Controller */,
+				3284045A1E201501003D0CB3 /* View */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		328404591E201501003D0CB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3284045A1E201501003D0CB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7262298820267777A14F0C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				088B62698E3D47D416CCA6F7 /* libPods-Baoli.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0F53BDC1E23BBF900F8A3A9 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				B0F53BD21E232EF600F8A3A9 /* BLMineViewController.h */,
+				B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */,
+				B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */,
+				B0F53BD71E237B1200F8A3A9 /* BLFeedbackViewController.h */,
+				B0F53BD81E237B1200F8A3A9 /* BLFeedbackViewController.m */,
+				B0F53BD91E237B1200F8A3A9 /* BLFeedbackViewController.xib */,
+				B0F53BDE1E23BDAB00F8A3A9 /* BLSettingViewController.h */,
+				B0F53BDF1E23BDAB00F8A3A9 /* BLSettingViewController.m */,
+				B0F53BE01E23BDAB00F8A3A9 /* BLSettingViewController.xib */,
+			);
+			name = mine;
+			sourceTree = "<group>";
+		};
+		B0F53BDD1E23BC5400F8A3A9 /* parking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = parking;
+			sourceTree = "<group>";
+		};
+		CE6D24291E1B6D580069B5FC = {
+			isa = PBXGroup;
+			children = (
+				CE6D24341E1B6D580069B5FC /* Baoli */,
+				CE6D244E1E1B6D580069B5FC /* BaoliTests */,
+				CE6D24591E1B6D580069B5FC /* BaoliUITests */,
+				CE6D24331E1B6D580069B5FC /* Products */,
+				2A822617075B53790D5636CC /* Pods */,
+				7262298820267777A14F0C0D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE6D24331E1B6D580069B5FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D24321E1B6D580069B5FC /* Baoli.app */,
+				CE6D244B1E1B6D580069B5FC /* BaoliTests.xctest */,
+				CE6D24561E1B6D580069B5FC /* BaoliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE6D24341E1B6D580069B5FC /* Baoli */ = {
+			isa = PBXGroup;
+			children = (
+				328404351E2007EE003D0CB3 /* Business */,
+				CE6D24CC1E1B70980069B5FC /* Common */,
+				CE6D24381E1B6D580069B5FC /* AppDelegate.h */,
+				CE6D24391E1B6D580069B5FC /* AppDelegate.m */,
+				CE6D243B1E1B6D580069B5FC /* ViewController.h */,
+				CE6D243C1E1B6D580069B5FC /* ViewController.m */,
+				CE6D243E1E1B6D580069B5FC /* Main.storyboard */,
+				CE6D24411E1B6D580069B5FC /* Assets.xcassets */,
+				CE6D24431E1B6D580069B5FC /* LaunchScreen.storyboard */,
+				CE6D24461E1B6D580069B5FC /* Info.plist */,
+				CE6D24351E1B6D580069B5FC /* Supporting Files */,
+			);
+			path = Baoli;
+			sourceTree = "<group>";
+		};
+		CE6D24351E1B6D580069B5FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D24361E1B6D580069B5FC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE6D244E1E1B6D580069B5FC /* BaoliTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D244F1E1B6D580069B5FC /* BaoliTests.m */,
+				CE6D24511E1B6D580069B5FC /* Info.plist */,
+			);
+			path = BaoliTests;
+			sourceTree = "<group>";
+		};
+		CE6D24591E1B6D580069B5FC /* BaoliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D245A1E1B6D580069B5FC /* BaoliUITests.m */,
+				CE6D245C1E1B6D580069B5FC /* Info.plist */,
+			);
+			path = BaoliUITests;
+			sourceTree = "<group>";
+		};
+		CE6D24CC1E1B70980069B5FC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				328404341E2007E1003D0CB3 /* Business */,
+				CE6D24CD1E1B70980069B5FC /* Extra */,
+				CE6D24DA1E1B70980069B5FC /* Model */,
+				CE6D24DB1E1B70980069B5FC /* NSObject */,
+				CE6D24E01E1B70980069B5FC /* View */,
+				CE6D24E11E1B70980069B5FC /* ViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE6D24CD1E1B70980069B5FC /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D24CE1E1B70980069B5FC /* NSDictionary+Extra.h */,
+				CE6D24CF1E1B70980069B5FC /* NSDictionary+Extra.m */,
+				CE6D24D01E1B70980069B5FC /* NSString+DDFExtra.h */,
+				CE6D24D11E1B70980069B5FC /* NSString+DDFExtra.m */,
+				CE6D24D41E1B70980069B5FC /* UIColor+Extend.h */,
+				CE6D24D51E1B70980069B5FC /* UIColor+Extend.m */,
+				CE6D24D61E1B70980069B5FC /* UIColor+Extra.h */,
+				CE6D24D71E1B70980069B5FC /* UIColor+Extra.m */,
+				CE6D24D81E1B70980069B5FC /* UIFont+Extra.h */,
+				CE6D24D91E1B70980069B5FC /* UIFont+Extra.m */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		CE6D24DA1E1B70980069B5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE6D24DB1E1B70980069B5FC /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D24DC1E1B70980069B5FC /* BLApplaunch.h */,
+				CE6D24DD1E1B70980069B5FC /* BLApplaunch.m */,
+				CE6D24DE1E1B70980069B5FC /* Header.h */,
+				CE6D24DF1E1B70980069B5FC /* Prefix.pch */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		CE6D24E01E1B70980069B5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE6D24E11E1B70980069B5FC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D24E21E1B70980069B5FC /* BaseViewController.h */,
+				CE6D24E31E1B70980069B5FC /* BaseViewController.m */,
+				CE6D24E41E1B70980069B5FC /* BLNavigationController.h */,
+				CE6D24E51E1B70980069B5FC /* BLNavigationController.m */,
+				CE6D24E61E1B70980069B5FC /* BLTableViewController.h */,
+				CE6D24E71E1B70980069B5FC /* BLTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE6D24311E1B6D580069B5FC /* Baoli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6D245F1E1B6D580069B5FC /* Build configuration list for PBXNativeTarget "Baoli" */;
+			buildPhases = (
+				88404B99CE90FA7C58016EFB /* [CP] Check Pods Manifest.lock */,
+				CE6D242E1E1B6D580069B5FC /* Sources */,
+				CE6D242F1E1B6D580069B5FC /* Frameworks */,
+				CE6D24301E1B6D580069B5FC /* Resources */,
+				0E7B2004CF6862E8D872BCF3 /* [CP] Embed Pods Frameworks */,
+				39F053846F5A29A9C1B72251 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Baoli;
+			productName = Baoli;
+			productReference = CE6D24321E1B6D580069B5FC /* Baoli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE6D244A1E1B6D580069B5FC /* BaoliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6D24621E1B6D580069B5FC /* Build configuration list for PBXNativeTarget "BaoliTests" */;
+			buildPhases = (
+				CE6D24471E1B6D580069B5FC /* Sources */,
+				CE6D24481E1B6D580069B5FC /* Frameworks */,
+				CE6D24491E1B6D580069B5FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6D244D1E1B6D580069B5FC /* PBXTargetDependency */,
+			);
+			name = BaoliTests;
+			productName = BaoliTests;
+			productReference = CE6D244B1E1B6D580069B5FC /* BaoliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE6D24551E1B6D580069B5FC /* BaoliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6D24651E1B6D580069B5FC /* Build configuration list for PBXNativeTarget "BaoliUITests" */;
+			buildPhases = (
+				CE6D24521E1B6D580069B5FC /* Sources */,
+				CE6D24531E1B6D580069B5FC /* Frameworks */,
+				CE6D24541E1B6D580069B5FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6D24581E1B6D580069B5FC /* PBXTargetDependency */,
+			);
+			name = BaoliUITests;
+			productName = BaoliUITests;
+			productReference = CE6D24561E1B6D580069B5FC /* BaoliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE6D242A1E1B6D580069B5FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BL;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE6D24311E1B6D580069B5FC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					CE6D244A1E1B6D580069B5FC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE6D24311E1B6D580069B5FC;
+					};
+					CE6D24551E1B6D580069B5FC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE6D24311E1B6D580069B5FC;
+					};
+				};
+			};
+			buildConfigurationList = CE6D242D1E1B6D580069B5FC /* Build configuration list for PBXProject "Baoli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE6D24291E1B6D580069B5FC;
+			productRefGroup = CE6D24331E1B6D580069B5FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE6D24311E1B6D580069B5FC /* Baoli */,
+				CE6D244A1E1B6D580069B5FC /* BaoliTests */,
+				CE6D24551E1B6D580069B5FC /* BaoliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE6D24301E1B6D580069B5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3284043C1E200822003D0CB3 /* BLLoginViewController.xib in Resources */,
+				3284044A1E2010E8003D0CB3 /* BLFindPassWordController.xib in Resources */,
+				B0F53BE21E23BDAB00F8A3A9 /* BLSettingViewController.xib in Resources */,
+				328404411E200B2C003D0CB3 /* BLRegisterViewController.xib in Resources */,
+				B0F53BDB1E237B1200F8A3A9 /* BLFeedbackViewController.xib in Resources */,
+				CE6D24451E1B6D580069B5FC /* LaunchScreen.storyboard in Resources */,
+				3284044F1E20125C003D0CB3 /* BLLoginFastController.xib in Resources */,
+				328404571E2013A0003D0CB3 /* BLHomeInfoViewCell.xib in Resources */,
+				CE6D24421E1B6D580069B5FC /* Assets.xcassets in Resources */,
+				CE6D24401E1B6D580069B5FC /* Main.storyboard in Resources */,
+				B0F53BD61E232EF600F8A3A9 /* BLMineViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6D24491E1B6D580069B5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6D24541E1B6D580069B5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E7B2004CF6862E8D872BCF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Baoli/Pods-Baoli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39F053846F5A29A9C1B72251 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Baoli/Pods-Baoli-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88404B99CE90FA7C58016EFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE6D242E1E1B6D580069B5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6D243D1E1B6D580069B5FC /* ViewController.m in Sources */,
+				CE6D24E81E1B70980069B5FC /* NSDictionary+Extra.m in Sources */,
+				CE6D24EF1E1B70980069B5FC /* BaseViewController.m in Sources */,
+				328404561E2013A0003D0CB3 /* BLHomeInfoViewCell.m in Sources */,
+				328404401E200B2C003D0CB3 /* BLRegisterViewController.m in Sources */,
+				3284043B1E200822003D0CB3 /* BLLoginViewController.m in Sources */,
+				B0F53BD51E232EF600F8A3A9 /* BLMineViewController.m in Sources */,
+				CE6D24F11E1B70980069B5FC /* BLTableViewController.m in Sources */,
+				CE6D24E91E1B70980069B5FC /* NSString+DDFExtra.m in Sources */,
+				CE6D24F01E1B70980069B5FC /* BLNavigationController.m in Sources */,
+				328404451E200B7A003D0CB3 /* BLTextField.m in Sources */,
+				B0F53BDA1E237B1200F8A3A9 /* BLFeedbackViewController.m in Sources */,
+				CE6D24EB1E1B70980069B5FC /* UIColor+Extend.m in Sources */,
+				CE6D243A1E1B6D580069B5FC /* AppDelegate.m in Sources */,
+				328404491E2010E8003D0CB3 /* BLFindPassWordController.m in Sources */,
+				B0F53BE11E23BDAB00F8A3A9 /* BLSettingViewController.m in Sources */,
+				CE6D24ED1E1B70980069B5FC /* UIFont+Extra.m in Sources */,
+				CE6D24EC1E1B70980069B5FC /* UIColor+Extra.m in Sources */,
+				3284044E1E20125C003D0CB3 /* BLLoginFastController.m in Sources */,
+				CE6D24EE1E1B70980069B5FC /* BLApplaunch.m in Sources */,
+				CE6D24371E1B6D580069B5FC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6D24471E1B6D580069B5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6D24501E1B6D580069B5FC /* BaoliTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6D24521E1B6D580069B5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6D245B1E1B6D580069B5FC /* BaoliUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE6D244D1E1B6D580069B5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6D24311E1B6D580069B5FC /* Baoli */;
+			targetProxy = CE6D244C1E1B6D580069B5FC /* PBXContainerItemProxy */;
+		};
+		CE6D24581E1B6D580069B5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6D24311E1B6D580069B5FC /* Baoli */;
+			targetProxy = CE6D24571E1B6D580069B5FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE6D243E1E1B6D580069B5FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6D243F1E1B6D580069B5FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE6D24431E1B6D580069B5FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6D24441E1B6D580069B5FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE6D245D1E1B6D580069B5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE6D245E1E1B6D580069B5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE6D24601E1B6D580069B5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7358993828B5D5F8922ADAA1 /* Pods-Baoli.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Baoli/Common/NSObject/Prefix.pch;
+				INFOPLIST_FILE = Baoli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.Baoli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE6D24611E1B6D580069B5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E38D3A0E8D03AA50F9AF5A7 /* Pods-Baoli.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Baoli/Common/NSObject/Prefix.pch;
+				INFOPLIST_FILE = Baoli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.Baoli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE6D24631E1B6D580069B5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BaoliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.BaoliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baoli.app/Baoli";
+			};
+			name = Debug;
+		};
+		CE6D24641E1B6D580069B5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BaoliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.BaoliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baoli.app/Baoli";
+			};
+			name = Release;
+		};
+		CE6D24661E1B6D580069B5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BaoliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.BaoliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Baoli;
+			};
+			name = Debug;
+		};
+		CE6D24671E1B6D580069B5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BaoliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.BaoliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Baoli;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE6D242D1E1B6D580069B5FC /* Build configuration list for PBXProject "Baoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6D245D1E1B6D580069B5FC /* Debug */,
+				CE6D245E1E1B6D580069B5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6D245F1E1B6D580069B5FC /* Build configuration list for PBXNativeTarget "Baoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6D24601E1B6D580069B5FC /* Debug */,
+				CE6D24611E1B6D580069B5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6D24621E1B6D580069B5FC /* Build configuration list for PBXNativeTarget "BaoliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6D24631E1B6D580069B5FC /* Debug */,
+				CE6D24641E1B6D580069B5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6D24651E1B6D580069B5FC /* Build configuration list for PBXNativeTarget "BaoliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6D24661E1B6D580069B5FC /* Debug */,
+				CE6D24671E1B6D580069B5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE6D242A1E1B6D580069B5FC /* Project object */;
+}
