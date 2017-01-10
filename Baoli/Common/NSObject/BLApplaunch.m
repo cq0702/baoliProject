@@ -14,7 +14,8 @@
 #import "UIColor+Extra.h"
 #import "BLRegisterViewController.h"
 #import "BLNavigationController.h"
-
+#import "BLMineViewController.h"
+#import "BLParkingViewController.h"
 static BLApplaunch *shareInstance;
 
 @implementation BLApplaunch
@@ -32,7 +33,7 @@ static BLApplaunch *shareInstance;
 
 - (UIViewController *)rootViewController
 {
-    BLRegisterViewController *controller = [[BLRegisterViewController alloc] init];
+    BLMineViewController *controller = [[BLMineViewController alloc] init];
     BLNavigationController *nav = [[BLNavigationController alloc] initWithRootViewController:controller];
     return nav;
 }

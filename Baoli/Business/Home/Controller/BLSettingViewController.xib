@@ -57,52 +57,52 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzu-qL-TKa">
-                    <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="110" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="6oo-W7-c0M"/>
+                        <constraint firstAttribute="height" constant="40" id="6oo-W7-c0M"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bR-qD-znw">
-                    <rect key="frame" x="0.0" y="151" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="151" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Wa8-i8-czV"/>
+                        <constraint firstAttribute="height" constant="40" id="Wa8-i8-czV"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEp-rC-vk1">
-                    <rect key="frame" x="0.0" y="182" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="192" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="P2q-65-0dC"/>
+                        <constraint firstAttribute="height" constant="40" id="P2q-65-0dC"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT0-4B-oOl">
-                    <rect key="frame" x="0.0" y="213" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="233" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="RX0-or-ATw"/>
+                        <constraint firstAttribute="height" constant="40" id="RX0-or-ATw"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0r-YJ-YQb">
-                    <rect key="frame" x="0.0" y="263" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="283" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="C0b-y2-l1n"/>
+                        <constraint firstAttribute="height" constant="40" id="C0b-y2-l1n"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vw-pq-qjD">
-                    <rect key="frame" x="0.0" y="325" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="365" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="lDd-G1-iE6"/>
+                        <constraint firstAttribute="height" constant="40" id="lDd-G1-iE6"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5p-nX-SQF">
-                    <rect key="frame" x="0.0" y="294" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="324" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="03M-i2-5ss"/>
+                        <constraint firstAttribute="height" constant="40" id="03M-i2-5ss"/>
                     </constraints>
                 </button>
             </subviews>
@@ -123,7 +123,7 @@
                 <constraint firstAttribute="trailing" secondItem="5bR-qD-znw" secondAttribute="trailing" id="YyC-Fm-bX7"/>
                 <constraint firstItem="5bR-qD-znw" firstAttribute="top" secondItem="Gzu-qL-TKa" secondAttribute="bottom" constant="1" id="ZA3-lE-oe4"/>
                 <constraint firstItem="5bR-qD-znw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZIU-r5-mhw"/>
-                <constraint firstItem="Gzu-qL-TKa" firstAttribute="top" secondItem="WoM-sd-viP" secondAttribute="bottom" constant="20" id="cWa-jw-gRs"/>
+                <constraint firstItem="Gzu-qL-TKa" firstAttribute="top" secondItem="WoM-sd-viP" secondAttribute="bottom" constant="10" id="cWa-jw-gRs"/>
                 <constraint firstAttribute="trailing" secondItem="AT0-4B-oOl" secondAttribute="trailing" id="eVU-g1-fVa"/>
                 <constraint firstItem="WoM-sd-viP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g0S-NF-OPB"/>
                 <constraint firstAttribute="trailing" secondItem="2Vw-pq-qjD" secondAttribute="trailing" id="iEL-go-fh9"/>
@@ -131,7 +131,7 @@
                 <constraint firstItem="f0r-YJ-YQb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="poL-n2-I3l"/>
                 <constraint firstAttribute="trailing" secondItem="f0r-YJ-YQb" secondAttribute="trailing" id="r3T-eo-v1h"/>
                 <constraint firstItem="CEp-rC-vk1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wxY-uJ-KRr"/>
-                <constraint firstItem="f0r-YJ-YQb" firstAttribute="top" secondItem="AT0-4B-oOl" secondAttribute="bottom" constant="20" id="yBx-Zg-yjw"/>
+                <constraint firstItem="f0r-YJ-YQb" firstAttribute="top" secondItem="AT0-4B-oOl" secondAttribute="bottom" constant="10" id="yBx-Zg-yjw"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>

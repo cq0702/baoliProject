@@ -31,25 +31,25 @@
                                                                    target:self action:@selector(changeAvatar)];
     self.navigationItem.rightBarButtonItem = rightButton;
     
-    UILabel *nameLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *nameLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:nameLabel title:@"昵称"];
     [self.nameButton addSubview:nameLabel];
-    UILabel *sexLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *sexLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:sexLabel title:@"性别"];
     [self.sexButton addSubview:sexLabel];
-    UILabel *birthdayLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *birthdayLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:birthdayLabel title:@"生日"];
     [self.birthdayButton addSubview:birthdayLabel];
-    UILabel *signLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *signLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:signLabel title:@"签名"];
     [self.signButton addSubview:signLabel];
-    UILabel *phoneLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *phoneLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:phoneLabel title:@"手机号码"];
     [self.phoneButton addSubview:phoneLabel];
-    UILabel *passwordLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *passwordLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:passwordLabel title:@"重置密码"];
     [self.passwordButton addSubview:passwordLabel];
-    UILabel *locationLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *locationLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:locationLabel title:@"所在小区"];
     [self.locationButton addSubview:locationLabel];
 

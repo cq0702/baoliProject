@@ -11,6 +11,8 @@
 #import "UIFont+Extra.h"
 #import "BLFeedbackViewController.h"
 #import "BLSettingViewController.h"
+#import "BLMessagesViewController.h"
+#import "BLReviewViewController.h"
 @interface BLMineViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *feedbackButton;
 @property (weak, nonatomic) IBOutlet UIButton *introductionButton;
@@ -23,6 +25,7 @@
 - (IBAction)protocolAction:(UIButton *)sender;
 - (IBAction)loginoutAction:(UIButton *)sender;
 - (IBAction)settingAction:(UIButton *)sender;
+- (IBAction)messagesAction:(UIButton *)sender;
 
 @end
 
@@ -31,17 +34,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor defaultBackgroundColor];
-    UILabel *feedback=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *feedback=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:feedback title:@"意见反馈"];
     UIImageView *nextImage=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-35, 5, 15, 20)];
     nextImage.image=[UIImage imageNamed:@"IQButtonBarArrowRight.png"];
-    UILabel *introduction=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *introduction=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:introduction title:@"平台简介"];
-    UILabel *help=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *help=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:help title:@"帮助中心"];
-    UILabel *protocol=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *protocol=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:protocol title:@"使用协议"];
-    UILabel *loginout=[[UILabel alloc] initWithFrame:CGRectMake(20, 5, 100, 20)];
+    UILabel *loginout=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
     [self setlabel:loginout title:@"退出登录"];
     [self.feedbackButton addSubview:nextImage];
     [self.feedbackButton addSubview:feedback];
@@ -75,6 +78,8 @@
 }
 
 - (IBAction)protocolAction:(UIButton *)sender {
+    BLReviewViewController *BLReviewVC=[[BLReviewViewController alloc] init];
+    [self.navigationController pushViewController:BLReviewVC animated:YES];
 }
 
 - (IBAction)loginoutAction:(UIButton *)sender {
@@ -83,6 +88,11 @@
 - (IBAction)settingAction:(UIButton *)sender {
     BLSettingViewController *BLSettingVC=[[BLSettingViewController alloc] init];
     [self.navigationController pushViewController:BLSettingVC animated:YES];
+}
+
+- (IBAction)messagesAction:(UIButton *)sender {
+    BLMessagesViewController *BLMessagesVC=[[BLMessagesViewController alloc] init];
+    [self.navigationController pushViewController:BLMessagesVC animated:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

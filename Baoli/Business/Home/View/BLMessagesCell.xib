@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="BLMessagesCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gay-PB-npI">
+                        <rect key="frame" x="18" y="22" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7tA-Dj-YKc"/>
+                            <constraint firstAttribute="height" constant="40" id="9VW-sw-qfY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州保利 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYV-mo-zRb">
+                        <rect key="frame" x="68" y="18" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="A7j-jb-3ob"/>
+                            <constraint firstAttribute="height" constant="20" id="qrq-6a-3Qe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16/12/07" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6z8-dx-b6R">
+                        <rect key="frame" x="216" y="18" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="3VD-gx-JZG"/>
+                            <constraint firstAttribute="height" constant="21" id="gWL-1j-J8o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-2g-JoU">
+                        <rect key="frame" x="274" y="49.5" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="3Df-QQ-dzM"/>
+                            <constraint firstAttribute="height" constant="21" id="mT5-ND-rO9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.46666666666666667" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="停电通知:尊敬的业主你好。2016-12-80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIn-tY-Vbe">
+                        <rect key="frame" x="68" y="51" width="196" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FWg-JL-ESb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bYV-mo-zRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="09a-vM-EFq"/>
+                    <constraint firstItem="6z8-dx-b6R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="3cE-iG-kMd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6z8-dx-b6R" secondAttribute="trailing" constant="10" id="6gG-Vf-XNu"/>
+                    <constraint firstItem="mIn-tY-Vbe" firstAttribute="leading" secondItem="Gay-PB-npI" secondAttribute="trailing" constant="10" id="IbD-Qh-gcK"/>
+                    <constraint firstItem="VI9-2g-JoU" firstAttribute="leading" secondItem="mIn-tY-Vbe" secondAttribute="trailing" constant="10" id="auh-TG-KBx"/>
+                    <constraint firstItem="bYV-mo-zRb" firstAttribute="leading" secondItem="Gay-PB-npI" secondAttribute="trailing" constant="10" id="bSV-rQ-vrJ"/>
+                    <constraint firstItem="Gay-PB-npI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fZz-ze-l8J"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VI9-2g-JoU" secondAttribute="trailing" constant="10" id="gAc-xj-VWZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VI9-2g-JoU" secondAttribute="bottom" constant="5" id="hkp-JV-B0p"/>
+                    <constraint firstItem="Gay-PB-npI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="lr1-ZX-30p"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mIn-tY-Vbe" secondAttribute="bottom" constant="5" id="xz7-l4-dmK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="41" y="34"/>
+        </tableViewCell>
+    </objects>
+</document>
