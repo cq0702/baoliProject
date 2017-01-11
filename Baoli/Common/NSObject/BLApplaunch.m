@@ -33,6 +33,7 @@ static BLApplaunch *shareInstance;
 
 - (UIViewController *)rootViewController
 {
+//    BLParkingViewController *controller = [[BLParkingViewController alloc] init];
     BLMineViewController *controller = [[BLMineViewController alloc] init];
     BLNavigationController *nav = [[BLNavigationController alloc] initWithRootViewController:controller];
     return nav;

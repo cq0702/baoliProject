@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,6 +15,9 @@
                 <outlet property="helpButton" destination="OqW-aw-nMa" id="dH4-Ou-4tU"/>
                 <outlet property="introductionButton" destination="yJm-3b-80j" id="8GC-oR-zn8"/>
                 <outlet property="loginout" destination="iT5-nd-Te5" id="83t-tL-WER"/>
+                <outlet property="myRent" destination="3Ht-F2-QKK" id="Hnf-yG-U0I"/>
+                <outlet property="myReview" destination="C9S-RK-1fz" id="GJD-kx-wEZ"/>
+                <outlet property="mySale" destination="QpL-nc-v4K" id="6mg-a3-Jlf"/>
                 <outlet property="protocolButton" destination="ye4-yz-Zrj" id="6V0-gW-po2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,12 +31,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snA-fp-Xb5">
-                            <rect key="frame" x="20" y="20" width="46" height="30"/>
+                            <rect key="frame" x="20" y="30" width="30" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="46" id="ofx-Nv-tPY"/>
+                                <constraint firstAttribute="width" constant="30" id="ofx-Nv-tPY"/>
                                 <constraint firstAttribute="height" constant="30" id="zH5-wA-hvx"/>
                             </constraints>
-                            <state key="normal" title="设置">
+                            <state key="normal" backgroundImage="设置.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -41,27 +44,27 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf8-gf-nBr">
-                            <rect key="frame" x="309" y="20" width="46" height="30"/>
+                            <rect key="frame" x="325" y="30" width="30" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="46" id="npD-ci-YsW"/>
+                                <constraint firstAttribute="width" constant="30" id="npD-ci-YsW"/>
                                 <constraint firstAttribute="height" constant="30" id="wZS-tz-aOD"/>
                             </constraints>
-                            <state key="normal" title="消息">
+                            <state key="normal" backgroundImage="消息-白.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="messagesAction:" destination="-1" eventType="touchUpInside" id="6Br-x9-nBb"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoOverlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrm-4M-afN">
-                            <rect key="frame" x="163" y="20" width="50" height="50"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrm-4M-afN">
+                            <rect key="frame" x="163" y="50" width="50" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="8OU-8f-SSM"/>
                                 <constraint firstAttribute="width" constant="50" id="jku-57-CGz"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈先生" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhW-ap-kOO">
-                            <rect key="frame" x="87" y="111" width="200" height="21"/>
+                            <rect key="frame" x="87" y="136" width="200" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="TjF-6J-tm1"/>
                                 <constraint firstAttribute="width" constant="200" id="gtI-2w-xfo"/>
@@ -71,7 +74,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何以解忧唯有杜康" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uek-j5-0gV">
-                            <rect key="frame" x="87" y="142" width="200" height="21"/>
+                            <rect key="frame" x="87" y="162" width="200" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="8J7-hB-sfX"/>
                                 <constraint firstAttribute="height" constant="21" id="aD7-O9-h6M"/>
@@ -81,7 +84,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="134****0199" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-ql-ol3">
-                            <rect key="frame" x="87" y="80" width="200" height="21"/>
+                            <rect key="frame" x="87" y="110" width="200" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="JK2-Si-l6Y"/>
                                 <constraint firstAttribute="height" constant="21" id="XK0-PD-68w"/>
@@ -95,13 +98,13 @@
                     <constraints>
                         <constraint firstItem="snA-fp-Xb5" firstAttribute="leading" secondItem="pRN-4k-yXI" secondAttribute="leading" constant="20" id="5a6-R1-NJx"/>
                         <constraint firstItem="Ph8-ql-ol3" firstAttribute="centerX" secondItem="pRN-4k-yXI" secondAttribute="centerX" id="A9A-uK-QB8"/>
-                        <constraint firstItem="Vf8-gf-nBr" firstAttribute="top" secondItem="pRN-4k-yXI" secondAttribute="top" constant="20" id="CrJ-ds-RLB"/>
-                        <constraint firstItem="snA-fp-Xb5" firstAttribute="top" secondItem="pRN-4k-yXI" secondAttribute="top" constant="20" id="HXP-g6-Gft"/>
-                        <constraint firstItem="zrm-4M-afN" firstAttribute="top" secondItem="pRN-4k-yXI" secondAttribute="top" constant="20" symbolic="YES" id="JjW-ZJ-4sO"/>
+                        <constraint firstItem="Vf8-gf-nBr" firstAttribute="top" secondItem="pRN-4k-yXI" secondAttribute="top" constant="30" id="CrJ-ds-RLB"/>
+                        <constraint firstItem="snA-fp-Xb5" firstAttribute="top" secondItem="pRN-4k-yXI" secondAttribute="top" constant="30" id="HXP-g6-Gft"/>
+                        <constraint firstItem="zrm-4M-afN" firstAttribute="top" secondItem="pRN-4k-yXI" secondAttribute="top" constant="50" id="JjW-ZJ-4sO"/>
                         <constraint firstItem="vhW-ap-kOO" firstAttribute="centerX" secondItem="pRN-4k-yXI" secondAttribute="centerX" id="LhI-dI-MTl"/>
                         <constraint firstAttribute="height" constant="200" id="Qbi-Zw-dyP"/>
-                        <constraint firstItem="vhW-ap-kOO" firstAttribute="top" secondItem="Ph8-ql-ol3" secondAttribute="bottom" constant="10" id="S39-Fi-ZtE"/>
-                        <constraint firstItem="Uek-j5-0gV" firstAttribute="top" secondItem="vhW-ap-kOO" secondAttribute="bottom" constant="10" id="Ymo-2F-2ol"/>
+                        <constraint firstItem="vhW-ap-kOO" firstAttribute="top" secondItem="Ph8-ql-ol3" secondAttribute="bottom" constant="5" id="S39-Fi-ZtE"/>
+                        <constraint firstItem="Uek-j5-0gV" firstAttribute="top" secondItem="vhW-ap-kOO" secondAttribute="bottom" constant="5" id="Ymo-2F-2ol"/>
                         <constraint firstAttribute="trailing" secondItem="Vf8-gf-nBr" secondAttribute="trailing" constant="20" id="i96-Cq-9KX"/>
                         <constraint firstItem="zrm-4M-afN" firstAttribute="centerX" secondItem="pRN-4k-yXI" secondAttribute="centerX" id="mg1-kA-i4V"/>
                         <constraint firstItem="Uek-j5-0gV" firstAttribute="centerX" secondItem="pRN-4k-yXI" secondAttribute="centerX" id="o1L-F8-o4o"/>
@@ -112,28 +115,34 @@
                     <rect key="frame" x="0.0" y="200" width="375" height="80"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ht-F2-QKK">
-                            <rect key="frame" x="37.5" y="25" width="80" height="30"/>
+                            <rect key="frame" x="37.5" y="10" width="80" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="Req-Qd-nlh"/>
-                                <constraint firstAttribute="height" constant="30" id="ruS-0y-PKM"/>
+                                <constraint firstAttribute="height" constant="60" id="ruS-0y-PKM"/>
                             </constraints>
-                            <state key="normal" title="我出租的"/>
+                            <connections>
+                                <action selector="rentAction:" destination="-1" eventType="touchUpInside" id="qaz-Ub-nFE"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9S-RK-1fz">
-                            <rect key="frame" x="257.5" y="25" width="80" height="30"/>
+                            <rect key="frame" x="257.5" y="10" width="80" height="60"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="87Q-tw-9Bn"/>
+                                <constraint firstAttribute="height" constant="60" id="87Q-tw-9Bn"/>
                                 <constraint firstAttribute="width" constant="80" id="lAa-iC-Ygl"/>
                             </constraints>
-                            <state key="normal" title="我的信评"/>
+                            <connections>
+                                <action selector="reviewAction:" destination="-1" eventType="touchUpInside" id="HUu-x2-OqX"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-nc-v4K">
-                            <rect key="frame" x="147.5" y="25" width="80" height="30"/>
+                            <rect key="frame" x="147.5" y="10" width="80" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="3No-4j-8ij"/>
-                                <constraint firstAttribute="height" constant="30" id="uMr-6g-ayA"/>
+                                <constraint firstAttribute="height" constant="60" id="uMr-6g-ayA"/>
                             </constraints>
-                            <state key="normal" title="我租到的"/>
+                            <connections>
+                                <action selector="saleAction:" destination="-1" eventType="touchUpInside" id="oIf-ZN-Ekv"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,6 +235,8 @@
         </view>
     </objects>
     <resources>
-        <image name="VideoOverlay.png" width="16" height="11"/>
+        <image name="我.png" width="200" height="200"/>
+        <image name="消息-白.png" width="50" height="50"/>
+        <image name="设置.png" width="50" height="50"/>
     </resources>
 </document>

@@ -33,6 +33,42 @@
 		B07A4C111E2527EF0001258F /* BLParkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07A4C0F1E2527EF0001258F /* BLParkingViewController.xib */; };
 		B07A4C151E2528C00001258F /* BLParkingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A4C131E2528C00001258F /* BLParkingCell.m */; };
 		B07A4C161E2528C00001258F /* BLParkingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07A4C141E2528C00001258F /* BLParkingCell.xib */; };
+		B09D37AB1E265F8700DEDB9B /* 消息-白@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37A51E265F8700DEDB9B /* 消息-白@1x.png */; };
+		B09D37AC1E265F8700DEDB9B /* 消息-白@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37A61E265F8700DEDB9B /* 消息-白@2x.png */; };
+		B09D37AD1E265F8700DEDB9B /* 消息-白@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37A71E265F8700DEDB9B /* 消息-白@3x.png */; };
+		B09D37AE1E265F8700DEDB9B /* 消息-蓝@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37A81E265F8700DEDB9B /* 消息-蓝@1x.png */; };
+		B09D37AF1E265F8700DEDB9B /* 消息-蓝@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37A91E265F8700DEDB9B /* 消息-蓝@2x.png */; };
+		B09D37B01E265F8700DEDB9B /* 消息-蓝@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37AA1E265F8700DEDB9B /* 消息-蓝@3x.png */; };
+		B09D37B41E265FBE00DEDB9B /* 未选中@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37B11E265FBD00DEDB9B /* 未选中@1x.png */; };
+		B09D37B51E265FBE00DEDB9B /* 未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37B21E265FBD00DEDB9B /* 未选中@2x.png */; };
+		B09D37B61E265FBE00DEDB9B /* 未选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37B31E265FBD00DEDB9B /* 未选中@3x.png */; };
+		B09D37BA1E265FCA00DEDB9B /* 选中@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37B71E265FCA00DEDB9B /* 选中@1x.png */; };
+		B09D37BB1E265FCA00DEDB9B /* 选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37B81E265FCA00DEDB9B /* 选中@2x.png */; };
+		B09D37BC1E265FCA00DEDB9B /* 选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37B91E265FCA00DEDB9B /* 选中@3x.png */; };
+		B09D37C61E26600900DEDB9B /* 我出租的@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37BD1E26600800DEDB9B /* 我出租的@1x.png */; };
+		B09D37C71E26600900DEDB9B /* 我出租的@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37BE1E26600800DEDB9B /* 我出租的@2x.png */; };
+		B09D37C81E26600900DEDB9B /* 我出租的@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37BF1E26600800DEDB9B /* 我出租的@3x.png */; };
+		B09D37C91E26600900DEDB9B /* 我的信评@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37C01E26600800DEDB9B /* 我的信评@1x.png */; };
+		B09D37CA1E26600900DEDB9B /* 我的信评@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37C11E26600800DEDB9B /* 我的信评@2x.png */; };
+		B09D37CB1E26600900DEDB9B /* 我的信评@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37C21E26600800DEDB9B /* 我的信评@3x.png */; };
+		B09D37CC1E26600900DEDB9B /* 我租到的@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37C31E26600900DEDB9B /* 我租到的@1x.png */; };
+		B09D37CD1E26600900DEDB9B /* 我租到的@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37C41E26600900DEDB9B /* 我租到的@2x.png */; };
+		B09D37CE1E26600900DEDB9B /* 我租到的@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37C51E26600900DEDB9B /* 我租到的@3x.png */; };
+		B09D37D21E26601000DEDB9B /* 设置@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37CF1E26601000DEDB9B /* 设置@1x.png */; };
+		B09D37D31E26601000DEDB9B /* 设置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37D01E26601000DEDB9B /* 设置@2x.png */; };
+		B09D37D41E26601000DEDB9B /* 设置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37D11E26601000DEDB9B /* 设置@3x.png */; };
+		B09D37D81E2660A100DEDB9B /* 半星选中@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37D51E2660A100DEDB9B /* 半星选中@1x.png */; };
+		B09D37D91E2660A100DEDB9B /* 半星选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37D61E2660A100DEDB9B /* 半星选中@2x.png */; };
+		B09D37DA1E2660A100DEDB9B /* 半星选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37D71E2660A100DEDB9B /* 半星选中@3x.png */; };
+		B09D37E01E26633B00DEDB9B /* next@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37DD1E26633B00DEDB9B /* next@1x.png */; };
+		B09D37E11E26633B00DEDB9B /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37DE1E26633B00DEDB9B /* next@2x.png */; };
+		B09D37E21E26633B00DEDB9B /* next@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37DF1E26633B00DEDB9B /* next@3x.png */; };
+		B09D37FC1E26712000DEDB9B /* EMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B09D37FB1E26712000DEDB9B /* EMTextView.m */; };
+		B09D38001E267ADF00DEDB9B /* 我.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37FD1E267ADF00DEDB9B /* 我.png */; };
+		B09D38011E267ADF00DEDB9B /* 我@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37FE1E267ADF00DEDB9B /* 我@2x.png */; };
+		B09D38021E267ADF00DEDB9B /* 我@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37FF1E267ADF00DEDB9B /* 我@3x.png */; };
+		B09D38041E267B5600DEDB9B /* backgroud2.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D38031E267B5600DEDB9B /* backgroud2.png */; };
+		B09D38061E2682A000DEDB9B /* backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D38051E2682A000DEDB9B /* backgroud.png */; };
 		B0F53BD51E232EF600F8A3A9 /* BLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */; };
 		B0F53BD61E232EF600F8A3A9 /* BLMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */; };
 		B0F53BDA1E237B1200F8A3A9 /* BLFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BD81E237B1200F8A3A9 /* BLFeedbackViewController.m */; };
@@ -118,6 +154,43 @@
 		B07A4C121E2528C00001258F /* BLParkingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLParkingCell.h; sourceTree = "<group>"; };
 		B07A4C131E2528C00001258F /* BLParkingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLParkingCell.m; sourceTree = "<group>"; };
 		B07A4C141E2528C00001258F /* BLParkingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLParkingCell.xib; sourceTree = "<group>"; };
+		B09D37A51E265F8700DEDB9B /* 消息-白@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息-白@1x.png"; sourceTree = "<group>"; };
+		B09D37A61E265F8700DEDB9B /* 消息-白@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息-白@2x.png"; sourceTree = "<group>"; };
+		B09D37A71E265F8700DEDB9B /* 消息-白@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息-白@3x.png"; sourceTree = "<group>"; };
+		B09D37A81E265F8700DEDB9B /* 消息-蓝@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息-蓝@1x.png"; sourceTree = "<group>"; };
+		B09D37A91E265F8700DEDB9B /* 消息-蓝@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息-蓝@2x.png"; sourceTree = "<group>"; };
+		B09D37AA1E265F8700DEDB9B /* 消息-蓝@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息-蓝@3x.png"; sourceTree = "<group>"; };
+		B09D37B11E265FBD00DEDB9B /* 未选中@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未选中@1x.png"; sourceTree = "<group>"; };
+		B09D37B21E265FBD00DEDB9B /* 未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未选中@2x.png"; sourceTree = "<group>"; };
+		B09D37B31E265FBD00DEDB9B /* 未选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未选中@3x.png"; sourceTree = "<group>"; };
+		B09D37B71E265FCA00DEDB9B /* 选中@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选中@1x.png"; sourceTree = "<group>"; };
+		B09D37B81E265FCA00DEDB9B /* 选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选中@2x.png"; sourceTree = "<group>"; };
+		B09D37B91E265FCA00DEDB9B /* 选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选中@3x.png"; sourceTree = "<group>"; };
+		B09D37BD1E26600800DEDB9B /* 我出租的@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我出租的@1x.png"; sourceTree = "<group>"; };
+		B09D37BE1E26600800DEDB9B /* 我出租的@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我出租的@2x.png"; sourceTree = "<group>"; };
+		B09D37BF1E26600800DEDB9B /* 我出租的@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我出租的@3x.png"; sourceTree = "<group>"; };
+		B09D37C01E26600800DEDB9B /* 我的信评@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的信评@1x.png"; sourceTree = "<group>"; };
+		B09D37C11E26600800DEDB9B /* 我的信评@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的信评@2x.png"; sourceTree = "<group>"; };
+		B09D37C21E26600800DEDB9B /* 我的信评@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的信评@3x.png"; sourceTree = "<group>"; };
+		B09D37C31E26600900DEDB9B /* 我租到的@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我租到的@1x.png"; sourceTree = "<group>"; };
+		B09D37C41E26600900DEDB9B /* 我租到的@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我租到的@2x.png"; sourceTree = "<group>"; };
+		B09D37C51E26600900DEDB9B /* 我租到的@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我租到的@3x.png"; sourceTree = "<group>"; };
+		B09D37CF1E26601000DEDB9B /* 设置@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置@1x.png"; sourceTree = "<group>"; };
+		B09D37D01E26601000DEDB9B /* 设置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置@2x.png"; sourceTree = "<group>"; };
+		B09D37D11E26601000DEDB9B /* 设置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置@3x.png"; sourceTree = "<group>"; };
+		B09D37D51E2660A100DEDB9B /* 半星选中@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "半星选中@1x.png"; sourceTree = "<group>"; };
+		B09D37D61E2660A100DEDB9B /* 半星选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "半星选中@2x.png"; sourceTree = "<group>"; };
+		B09D37D71E2660A100DEDB9B /* 半星选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "半星选中@3x.png"; sourceTree = "<group>"; };
+		B09D37DD1E26633B00DEDB9B /* next@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@1x.png"; sourceTree = "<group>"; };
+		B09D37DE1E26633B00DEDB9B /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
+		B09D37DF1E26633B00DEDB9B /* next@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@3x.png"; sourceTree = "<group>"; };
+		B09D37FA1E26712000DEDB9B /* EMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextView.h; sourceTree = "<group>"; };
+		B09D37FB1E26712000DEDB9B /* EMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTextView.m; sourceTree = "<group>"; };
+		B09D37FD1E267ADF00DEDB9B /* 我.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我.png"; sourceTree = "<group>"; };
+		B09D37FE1E267ADF00DEDB9B /* 我@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我@2x.png"; sourceTree = "<group>"; };
+		B09D37FF1E267ADF00DEDB9B /* 我@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我@3x.png"; sourceTree = "<group>"; };
+		B09D38031E267B5600DEDB9B /* backgroud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroud2.png; sourceTree = "<group>"; };
+		B09D38051E2682A000DEDB9B /* backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroud.png; sourceTree = "<group>"; };
 		B0F53BD21E232EF600F8A3A9 /* BLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMineViewController.h; sourceTree = "<group>"; };
 		B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMineViewController.m; sourceTree = "<group>"; };
 		B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMineViewController.xib; sourceTree = "<group>"; };
@@ -210,6 +283,7 @@
 		328404351E2007EE003D0CB3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				B09D37971E265F0700DEDB9B /* resources */,
 				328404581E201501003D0CB3 /* Record */,
 				328404501E201372003D0CB3 /* Home */,
 				328404361E20080D003D0CB3 /* Login */,
@@ -322,6 +396,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B09D37971E265F0700DEDB9B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B09D37981E265F1900DEDB9B /* mine */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		B09D37981E265F1900DEDB9B /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				B09D38051E2682A000DEDB9B /* backgroud.png */,
+				B09D38031E267B5600DEDB9B /* backgroud2.png */,
+				B09D37FD1E267ADF00DEDB9B /* 我.png */,
+				B09D37FE1E267ADF00DEDB9B /* 我@2x.png */,
+				B09D37FF1E267ADF00DEDB9B /* 我@3x.png */,
+				B09D37DD1E26633B00DEDB9B /* next@1x.png */,
+				B09D37DE1E26633B00DEDB9B /* next@2x.png */,
+				B09D37DF1E26633B00DEDB9B /* next@3x.png */,
+				B09D37D51E2660A100DEDB9B /* 半星选中@1x.png */,
+				B09D37D61E2660A100DEDB9B /* 半星选中@2x.png */,
+				B09D37D71E2660A100DEDB9B /* 半星选中@3x.png */,
+				B09D37CF1E26601000DEDB9B /* 设置@1x.png */,
+				B09D37D01E26601000DEDB9B /* 设置@2x.png */,
+				B09D37D11E26601000DEDB9B /* 设置@3x.png */,
+				B09D37BD1E26600800DEDB9B /* 我出租的@1x.png */,
+				B09D37BE1E26600800DEDB9B /* 我出租的@2x.png */,
+				B09D37BF1E26600800DEDB9B /* 我出租的@3x.png */,
+				B09D37C01E26600800DEDB9B /* 我的信评@1x.png */,
+				B09D37C11E26600800DEDB9B /* 我的信评@2x.png */,
+				B09D37C21E26600800DEDB9B /* 我的信评@3x.png */,
+				B09D37C31E26600900DEDB9B /* 我租到的@1x.png */,
+				B09D37C41E26600900DEDB9B /* 我租到的@2x.png */,
+				B09D37C51E26600900DEDB9B /* 我租到的@3x.png */,
+				B09D37B71E265FCA00DEDB9B /* 选中@1x.png */,
+				B09D37B81E265FCA00DEDB9B /* 选中@2x.png */,
+				B09D37B91E265FCA00DEDB9B /* 选中@3x.png */,
+				B09D37B11E265FBD00DEDB9B /* 未选中@1x.png */,
+				B09D37B21E265FBD00DEDB9B /* 未选中@2x.png */,
+				B09D37B31E265FBD00DEDB9B /* 未选中@3x.png */,
+				B09D37A51E265F8700DEDB9B /* 消息-白@1x.png */,
+				B09D37A61E265F8700DEDB9B /* 消息-白@2x.png */,
+				B09D37A71E265F8700DEDB9B /* 消息-白@3x.png */,
+				B09D37A81E265F8700DEDB9B /* 消息-蓝@1x.png */,
+				B09D37A91E265F8700DEDB9B /* 消息-蓝@2x.png */,
+				B09D37AA1E265F8700DEDB9B /* 消息-蓝@3x.png */,
+			);
+			name = mine;
+			sourceTree = "<group>";
+		};
+		B09D37F61E2670D700DEDB9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B09D37FA1E26712000DEDB9B /* EMTextView.h */,
+				B09D37FB1E26712000DEDB9B /* EMTextView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		B0F53BDC1E23BBF900F8A3A9 /* mine */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,11 +560,11 @@
 		CE6D24CC1E1B70980069B5FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B09D37F61E2670D700DEDB9B /* View */,
 				328404341E2007E1003D0CB3 /* Business */,
 				CE6D24CD1E1B70980069B5FC /* Extra */,
 				CE6D24DA1E1B70980069B5FC /* Model */,
 				CE6D24DB1E1B70980069B5FC /* NSObject */,
-				CE6D24E01E1B70980069B5FC /* View */,
 				CE6D24E11E1B70980069B5FC /* ViewController */,
 			);
 			path = Common;
@@ -470,13 +603,6 @@
 				CE6D24DF1E1B70980069B5FC /* Prefix.pch */,
 			);
 			path = NSObject;
-			sourceTree = "<group>";
-		};
-		CE6D24E01E1B70980069B5FC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CE6D24E11E1B70980069B5FC /* ViewController */ = {
@@ -602,22 +728,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09D37D81E2660A100DEDB9B /* 半星选中@1x.png in Resources */,
+				B09D37BC1E265FCA00DEDB9B /* 选中@3x.png in Resources */,
 				3284043C1E200822003D0CB3 /* BLLoginViewController.xib in Resources */,
+				B09D37D91E2660A100DEDB9B /* 半星选中@2x.png in Resources */,
 				3284044A1E2010E8003D0CB3 /* BLFindPassWordController.xib in Resources */,
+				B09D37C61E26600900DEDB9B /* 我出租的@1x.png in Resources */,
 				B0F53BE21E23BDAB00F8A3A9 /* BLSettingViewController.xib in Resources */,
 				328404411E200B2C003D0CB3 /* BLRegisterViewController.xib in Resources */,
+				B09D37E21E26633B00DEDB9B /* next@3x.png in Resources */,
+				B09D38001E267ADF00DEDB9B /* 我.png in Resources */,
 				B0F53BDB1E237B1200F8A3A9 /* BLFeedbackViewController.xib in Resources */,
+				B09D37B01E265F8700DEDB9B /* 消息-蓝@3x.png in Resources */,
 				B07A4C111E2527EF0001258F /* BLParkingViewController.xib in Resources */,
 				B07A4BF81E2509DB0001258F /* BLMessagesCell.xib in Resources */,
+				B09D37D31E26601000DEDB9B /* 设置@2x.png in Resources */,
+				B09D37D21E26601000DEDB9B /* 设置@1x.png in Resources */,
+				B09D37BB1E265FCA00DEDB9B /* 选中@2x.png in Resources */,
+				B09D37CD1E26600900DEDB9B /* 我租到的@2x.png in Resources */,
+				B09D37B61E265FBE00DEDB9B /* 未选中@3x.png in Resources */,
+				B09D37B51E265FBE00DEDB9B /* 未选中@2x.png in Resources */,
 				CE6D24451E1B6D580069B5FC /* LaunchScreen.storyboard in Resources */,
 				3284044F1E20125C003D0CB3 /* BLLoginFastController.xib in Resources */,
+				B09D37AF1E265F8700DEDB9B /* 消息-蓝@2x.png in Resources */,
+				B09D37AE1E265F8700DEDB9B /* 消息-蓝@1x.png in Resources */,
+				B09D37AC1E265F8700DEDB9B /* 消息-白@2x.png in Resources */,
 				328404571E2013A0003D0CB3 /* BLHomeInfoViewCell.xib in Resources */,
+				B09D37CC1E26600900DEDB9B /* 我租到的@1x.png in Resources */,
+				B09D38011E267ADF00DEDB9B /* 我@2x.png in Resources */,
 				B07A4C021E25145F0001258F /* BLReviewCell.xib in Resources */,
 				CE6D24421E1B6D580069B5FC /* Assets.xcassets in Resources */,
+				B09D37AB1E265F8700DEDB9B /* 消息-白@1x.png in Resources */,
+				B09D37C71E26600900DEDB9B /* 我出租的@2x.png in Resources */,
+				B09D37CE1E26600900DEDB9B /* 我租到的@3x.png in Resources */,
+				B09D37C81E26600900DEDB9B /* 我出租的@3x.png in Resources */,
+				B09D37D41E26601000DEDB9B /* 设置@3x.png in Resources */,
 				B07A4C0C1E25236F0001258F /* BLSendReviewViewController.xib in Resources */,
+				B09D37E01E26633B00DEDB9B /* next@1x.png in Resources */,
 				B07A4C161E2528C00001258F /* BLParkingCell.xib in Resources */,
+				B09D37CB1E26600900DEDB9B /* 我的信评@3x.png in Resources */,
+				B09D37C91E26600900DEDB9B /* 我的信评@1x.png in Resources */,
+				B09D37DA1E2660A100DEDB9B /* 半星选中@3x.png in Resources */,
+				B09D37E11E26633B00DEDB9B /* next@2x.png in Resources */,
 				B07A4C071E2517AA0001258F /* BLReviewDetailsViewController.xib in Resources */,
 				CE6D24401E1B6D580069B5FC /* Main.storyboard in Resources */,
+				B09D37AD1E265F8700DEDB9B /* 消息-白@3x.png in Resources */,
+				B09D37BA1E265FCA00DEDB9B /* 选中@1x.png in Resources */,
+				B09D38061E2682A000DEDB9B /* backgroud.png in Resources */,
+				B09D37B41E265FBE00DEDB9B /* 未选中@1x.png in Resources */,
+				B09D38041E267B5600DEDB9B /* backgroud2.png in Resources */,
+				B09D38021E267ADF00DEDB9B /* 我@3x.png in Resources */,
+				B09D37CA1E26600900DEDB9B /* 我的信评@2x.png in Resources */,
 				B0F53BD61E232EF600F8A3A9 /* BLMineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +855,7 @@
 				CE6D243D1E1B6D580069B5FC /* ViewController.m in Sources */,
 				CE6D24E81E1B70980069B5FC /* NSDictionary+Extra.m in Sources */,
 				CE6D24EF1E1B70980069B5FC /* BaseViewController.m in Sources */,
+				B09D37FC1E26712000DEDB9B /* EMTextView.m in Sources */,
 				328404561E2013A0003D0CB3 /* BLHomeInfoViewCell.m in Sources */,
 				328404401E200B2C003D0CB3 /* BLRegisterViewController.m in Sources */,
 				B07A4C101E2527EF0001258F /* BLParkingViewController.m in Sources */,

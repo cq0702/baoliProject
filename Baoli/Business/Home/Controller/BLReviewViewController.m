@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.title=@"我的信评";
     self.view.backgroundColor=[UIColor defaultBackgroundColor];
-    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(20, 10, ScreenWidth-40, 40)];
+    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 10, ScreenWidth-0, 40)];
     searchBar.placeholder=@"搜索";
     [self.view addSubview:searchBar];
     
@@ -34,7 +34,7 @@
 
 -(void)createTableView
 {
-    _tableView=[[UITableView alloc] initWithFrame:CGRectMake(20, 60, ScreenWidth-40, ScreenHeight-49) style:UITableViewStyleGrouped];
+    _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 60, ScreenWidth, ScreenHeight-49) style:UITableViewStyleGrouped];
     CGRect frame=CGRectMake(0, 0, 0, CGFLOAT_MIN);
     _tableView.tableHeaderView=[[UIView alloc] initWithFrame:frame];
     _tableView.backgroundColor=[UIColor colorWithRed:241/255.0f green:241/255.0f blue:241/255.0f alpha:1];
@@ -83,8 +83,9 @@
 {
     return 100;
 }
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 10)];
+    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 2)];
     view.backgroundColor=[UIColor defaultBackgroundColor];
     return view;
 }

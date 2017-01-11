@@ -11,6 +11,7 @@
 #import "BLSendReviewViewController.h"
 @interface BLReviewDetailsViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *reviewBUtton;
+@property (weak, nonatomic) IBOutlet UILabel *reviewLabel;
 - (IBAction)reviewAction:(UIButton *)sender;
 
 @end
@@ -26,6 +27,23 @@
                                                                     style:UIBarButtonItemStylePlain
                                                                    target:self action:@selector(contactOwner)];
     self.navigationItem.rightBarButtonItem = rightButton;
+    
+    int wide=(ScreenWidth-300-40)/2;
+    UIImageView *imageView1=[[UIImageView alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(self.reviewLabel.frame)+30, 100, 100)];
+    imageView1.image=[UIImage imageNamed:@"backgroud.png"];
+    [self.view addSubview:imageView1];
+    
+    UIImageView *imageView2=[[UIImageView alloc] initWithFrame:CGRectMake(wide+100+20, CGRectGetMaxY(self.reviewLabel.frame)+30, 100, 100)];
+    imageView2.image=[UIImage imageNamed:@"backgroud2.png"];
+    [self.view addSubview:imageView2];
+    
+    UIImageView *imageView3=[[UIImageView alloc] initWithFrame:CGRectMake(wide*2+200+20, CGRectGetMaxY(self.reviewLabel.frame)+30, 100, 100)];
+    imageView3.image=[UIImage imageNamed:@"backgroud.png"];
+    [self.view addSubview:imageView3];
+    
+    UILabel *count=[[UILabel alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(imageView1.frame)+10, 100, 20)];
+    count.text=@"评论: 0";
+    [self.view addSubview:count];
 }
 -(void)contactOwner{
     
