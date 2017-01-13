@@ -22,16 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *mySale;
 @property (weak, nonatomic) IBOutlet UIButton *myReview;
 @property (weak, nonatomic) IBOutlet UIButton *loginout;
-- (IBAction)feedbackAction:(UIButton *)sender;
-- (IBAction)introductionAction:(UIButton *)sender;
-- (IBAction)helpAction:(UIButton *)sender;
-- (IBAction)protocolAction:(UIButton *)sender;
-- (IBAction)loginoutAction:(UIButton *)sender;
-- (IBAction)settingAction:(UIButton *)sender;
-- (IBAction)messagesAction:(UIButton *)sender;
-- (IBAction)rentAction:(UIButton *)sender;
-- (IBAction)saleAction:(UIButton *)sender;
-- (IBAction)reviewAction:(UIButton *)sender;
+- (IBAction)buttonAction:(UIButton *)sender;
+
 
 @end
 
@@ -43,38 +35,12 @@
     
     [self setConfig];
     
-    UILabel *feedback=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
-    [self setlabel:feedback title:@"意见反馈"];
-    UIImageView *feedbackNext=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
-    feedbackNext.image=[UIImage imageNamed:@"next.png"];
-    
-    UILabel *introduction=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
-    [self setlabel:introduction title:@"平台简介"];
-    UIImageView *introductionNext=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
-    introductionNext.image=[UIImage imageNamed:@"next.png"];
-    
-    UILabel *help=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
-    [self setlabel:help title:@"帮助中心"];
-    UIImageView *helpNext=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
-    helpNext.image=[UIImage imageNamed:@"next.png"];
-    
-    UILabel *protocol=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
-    [self setlabel:protocol title:@"使用协议"];
-    UIImageView *protocolNext=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
-    protocolNext.image=[UIImage imageNamed:@"next.png"];
-    
-    UILabel *loginout=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
-    [self setlabel:loginout title:@"退出登录"];
+    [self setLabelWithButton:self.feedbackButton title:@"意见反馈" value:@""];
+    [self setLabelWithButton:self.introductionButton title:@"平台简介" value:@""];
+    [self setLabelWithButton:self.helpButton title:@"使用帮助" value:@""];
+    [self setLabelWithButton:self.protocolButton title:@"使用协议" value:@""];
+    [self setLabelWithButton:self.loginout title:@"退出登录" value:@""];
 
-    [self.feedbackButton addSubview:feedbackNext];
-    [self.feedbackButton addSubview:feedback];
-    [self.introductionButton addSubview:introduction];
-    [self.introductionButton addSubview:introductionNext];
-    [self.helpButton addSubview:help];
-    [self.helpButton addSubview:helpNext];
-    [self.protocolButton addSubview:protocol];
-    [self.protocolButton addSubview:protocolNext];
-    [self.loginout addSubview:loginout];
 }
 
 -(void)setConfig{
@@ -103,6 +69,22 @@
     [self.myReview addSubview:reviewLabel];
 }
 
+-(void)setLabelWithButton:(UIButton *)button title:(NSString *)title value:(NSString *)value{
+    button.backgroundColor=[UIColor whiteColor];
+    UILabel *titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
+    [self setlabel:titleLabel title:title];
+    [button addSubview:titleLabel];
+    
+    UILabel *valueLabel=[[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth-120-34, 10, 100, 20)];
+    valueLabel.textAlignment=NSTextAlignmentRight;
+    [self setlabel:valueLabel title:value];
+    [button addSubview:valueLabel];
+    
+    UIImageView *nextImage=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
+    nextImage.image=[UIImage imageNamed:@"next.png"];
+    [button addSubview:nextImage];
+}
+
 -(UILabel *)setlabel:(UILabel *)label title:(NSString *)title{
     label.font=[UIFont defaultMediumFont];
     label.text=title;
@@ -115,49 +97,48 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)feedbackAction:(UIButton *)sender {
-    BLFeedbackViewController *BLFeedbackVC=[[BLFeedbackViewController alloc] init];
-    [self.navigationController pushViewController:BLFeedbackVC animated:YES];
- }
-
-- (IBAction)introductionAction:(UIButton *)sender {
-}
-
-- (IBAction)helpAction:(UIButton *)sender {
-}
-
-- (IBAction)protocolAction:(UIButton *)sender {
-
-}
-
-- (IBAction)loginoutAction:(UIButton *)sender {
-}
-
-- (IBAction)settingAction:(UIButton *)sender {
-    BLSettingViewController *BLSettingVC=[[BLSettingViewController alloc] init];
-    [self.navigationController pushViewController:BLSettingVC animated:YES];
-}
-
-- (IBAction)messagesAction:(UIButton *)sender {
-    BLMessagesViewController *BLMessagesVC=[[BLMessagesViewController alloc] init];
-    [self.navigationController pushViewController:BLMessagesVC animated:YES];
-}
-
-- (IBAction)rentAction:(UIButton *)sender {
-}
-
-- (IBAction)saleAction:(UIButton *)sender {
-}
-
-- (IBAction)reviewAction:(UIButton *)sender {
-    BLReviewViewController *BLReviewVC=[[BLReviewViewController alloc] init];
-    [self.navigationController pushViewController:BLReviewVC animated:YES];
-}
-
 -(void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.hidden=YES;
 }
 -(void)viewWillDisappear:(BOOL)animated{
     self.navigationController.navigationBar.hidden=NO;
+}
+- (IBAction)buttonAction:(UIButton *)sender {
+    BLSettingViewController *BLSettingVC=[[BLSettingViewController alloc] init];
+    BLReviewViewController *BLReviewVC=[[BLReviewViewController alloc] init];
+    BLMessagesViewController *BLMessagesVC=[[BLMessagesViewController alloc] init];
+    BLFeedbackViewController *BLFeedbackVC=[[BLFeedbackViewController alloc] init];
+
+    switch (sender.tag) {
+        case 300://设置
+            [self.navigationController pushViewController:BLSettingVC animated:YES];
+            break;
+        case 301://消息
+            [self.navigationController pushViewController:BLMessagesVC animated:YES];
+            break;
+        case 302://我出租的
+            
+            break;
+        case 303://我租到的
+            
+            break;
+        case 304://我的信评
+            [self.navigationController pushViewController:BLReviewVC animated:YES];
+            break;
+        case 305://意见反馈
+            [self.navigationController pushViewController:BLFeedbackVC animated:YES];
+            break;
+        case 306://平台简介
+            
+            break;
+        case 307://使用帮助
+            
+            break;
+        case 308://使用协议
+            
+            break;
+        default:
+            break;
+    }
 }
 @end

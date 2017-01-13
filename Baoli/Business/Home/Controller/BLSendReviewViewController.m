@@ -9,6 +9,7 @@
 #import "BLSendReviewViewController.h"
 #import "UIColor+Extra.h"
 @interface BLSendReviewViewController ()
+@property (weak, nonatomic) IBOutlet UIView *takePhotoView;
 
 @end
 
@@ -21,6 +22,13 @@
                                                                     style:UIBarButtonItemStylePlain
                                                                    target:self action:@selector(sendAction)];
     self.navigationItem.rightBarButtonItem = rightButton;
+    
+    UIButton *takePhoto=[UIButton buttonWithType:UIButtonTypeCustom];
+    takePhoto.frame=CGRectMake(15, 15, 30, 30);
+    [takePhoto setImage:[UIImage imageNamed:@"photo.png"] forState:UIControlStateNormal];
+    self.takePhotoView.layer.borderWidth=1;
+    self.takePhotoView.layer.borderColor = ([[UIColor lightGrayColor] CGColor]);
+    [self.takePhotoView addSubview:takePhoto];
 }
 -(void)sendAction{
     
@@ -30,14 +38,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -8,6 +8,7 @@
 
 #import "BLParkingViewController.h"
 #import "BLParkingCell.h"
+#import "BLDealDetailsViewController.h"
 @interface BLParkingViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
@@ -77,7 +78,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    BLDealDetailsViewController *BLDealDetailsVC=[[BLDealDetailsViewController alloc] init];
+    [self.navigationController pushViewController:BLDealDetailsVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
