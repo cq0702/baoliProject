@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BLReviewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
 @end

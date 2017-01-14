@@ -79,10 +79,14 @@
     valueLabel.textAlignment=NSTextAlignmentRight;
     [self setlabel:valueLabel title:value];
     [button addSubview:valueLabel];
-    
-    UIImageView *nextImage=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
-    nextImage.image=[UIImage imageNamed:@"next.png"];
-    [button addSubview:nextImage];
+    if ([title isEqualToString:@"退出登录"]) {
+        
+    }else{
+        UIImageView *nextImage=[[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth-34, 12, 14, 16)];
+        nextImage.image=[UIImage imageNamed:@"next.png"];
+        [button addSubview:nextImage];
+    }
+
 }
 
 -(UILabel *)setlabel:(UILabel *)label title:(NSString *)title{

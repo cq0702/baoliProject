@@ -67,6 +67,7 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"BLReviewCell" owner:nil options:nil] firstObject];
     }
+    cell.detailLabel.layer.cornerRadius=6;
     return cell;
     
 }

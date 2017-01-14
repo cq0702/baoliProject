@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLFeedbackViewController">
             <connections>
+                <outlet property="contentLabel" destination="9OB-7W-vRd" id="xTH-uw-GNX"/>
                 <outlet property="typeView" destination="OGz-o2-tRv" id="2vx-vh-qkK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

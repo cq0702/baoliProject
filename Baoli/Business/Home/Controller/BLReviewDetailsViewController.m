@@ -9,6 +9,7 @@
 #import "BLReviewDetailsViewController.h"
 #import "UIColor+Extra.h"
 #import "BLSendReviewViewController.h"
+#import "UIFont+Extra.h"
 @interface BLReviewDetailsViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *reviewBUtton;
 @property (weak, nonatomic) IBOutlet UILabel *reviewLabel;
@@ -42,11 +43,22 @@
     [self.view addSubview:imageView3];
     
     UILabel *count=[[UILabel alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(imageView1.frame)+10, 100, 20)];
-    count.text=@"评论: 0";
+    [self setlabel:count title:@"评论: 0"];
     [self.view addSubview:count];
+    
+    UILabel *see=[[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 100 - 20, CGRectGetMaxY(imageView1.frame)+10, 100, 20)];
+    see.textAlignment=NSTextAlignmentRight;
+    [self setlabel:see title:@"14人看过"];
+    [self.view addSubview:see];
 }
 -(void)contactOwner{
     
+}
+-(UILabel *)setlabel:(UILabel *)label title:(NSString *)title{
+    label.font=[UIFont defaultMediumFont];
+    label.text=title;
+    label.textColor=[UIColor defaultSubTextColor];
+    return label;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
