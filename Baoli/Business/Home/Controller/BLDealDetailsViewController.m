@@ -10,9 +10,13 @@
 #import "UIColor+Extra.h"
 #import "UIFont+Extra.h"
 #import "UIColor+Extend.h"
-@interface BLDealDetailsViewController ()
+#import "BLDealDetailsCell.h"
+@interface BLDealDetailsViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
-    UIScrollView *_scrollView;
+    UITableView *_tableView;
+    UIScrollView *_scrollerView;
+    NSMutableArray *_dataArray;
+    
 }
 @end
 
@@ -22,6 +26,7 @@
     [super viewDidLoad];
     self.title=@"交易详情";
     self.view.backgroundColor=[UIColor defaultBackgroundColor];
+    _dataArray=[[NSMutableArray alloc] init];
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"联系车位主"
                                                                     style:UIBarButtonItemStylePlain
                                                                    target:self action:@selector(contactOwner)];
@@ -41,17 +46,25 @@
     [confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.view addSubview:confirmButton];
     
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64-40)];
-    _scrollView.backgroundColor=[UIColor defaultBackgroundColor];
-
-    [self.view addSubview:_scrollView];
+    _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-40) style:UITableViewStylePlain];
+    _tableView.backgroundColor=[UIColor defaultBackgroundColor];
+    _tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    _tableView.tag=180;
+    _tableView.dataSource=self;
+    _tableView.delegate=self;
+    _tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+    _tableView.tableHeaderView=[self viewWithHeaderView];
+    [self.view addSubview:_tableView];
+    
+}
+-(UIView *)viewWithHeaderView{
+    UIView *headerView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 464)];
     UIImageView *pictureImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 200)];
     pictureImage.image=[UIImage imageNamed:@"ditu.png"];
-    [_scrollView addSubview:pictureImage];
-    
+    [headerView addSubview:pictureImage];
     for (int i=0; i<5; i++) {
         UIView *LabelView=[[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(pictureImage.frame)+10+41*i, ScreenWidth, 40)];
-        [_scrollView addSubview:LabelView];
+        [headerView addSubview:LabelView];
         switch (i) {
             case 0:
                 [self setLabelWithView:LabelView title:@"车位主" value:@"陈先生"];
@@ -72,46 +85,12 @@
                 break;
         }
     }
-    
-    UILabel *reviewLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(pictureImage.frame)+224, ScreenWidth, 40)];
+    UILabel *reviewLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 424, ScreenWidth, 40)];
+    [self setlabel:reviewLabel title:@"历史评论"];
     reviewLabel.backgroundColor=[UIColor whiteColor];
     reviewLabel.textAlignment=NSTextAlignmentCenter;
-    [self setlabel:reviewLabel title:@"历史评论"];
-    [_scrollView addSubview:reviewLabel];
-    
-    for (int i=0; i<3; i++) {
-        UIView *reviewView=[[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(reviewLabel.frame)+100*i, ScreenWidth, 100)];
-        reviewView.backgroundColor=[UIColor whiteColor];
-        reviewView.tag=100+i;
-        [_scrollView addSubview:reviewView];
-        UIImageView *avatarImage=[[UIImageView alloc] initWithFrame:CGRectMake(10, 20, 60, 60)];
-        avatarImage.image=[UIImage imageNamed:@"我.png"];
-        [reviewView addSubview:avatarImage];
-        UILabel *nameLabel=[[UILabel alloc] initWithFrame:CGRectMake(80, 10, 100, 20)];
-        nameLabel.text=@"业主A先生";
-        [reviewView addSubview:nameLabel];
-        UILabel *timeLabel=[[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth-110, 10, 100, 20)];
-        timeLabel.textAlignment=NSTextAlignmentRight;
-        [self setlabel:timeLabel title:@"2016/12/12"];
-        [reviewView addSubview:timeLabel];
-        for (int j=0; j<5; j++) {
-            UIImageView *starImage=[[UIImageView alloc] initWithFrame:CGRectMake(80+j*25, CGRectGetMaxY(nameLabel.frame)+5, 20, 20)];
-            if (j==4) {
-                starImage.image=[UIImage imageNamed:@"半星选中.png"];
-            }else{
-                starImage.image=[UIImage imageNamed:@"选中.png"];
-            }
-            [reviewView addSubview:starImage];
-        }
-        UILabel *contentLabel=[[UILabel alloc] initWithFrame:CGRectMake(80, CGRectGetMaxY(nameLabel.frame)+30, ScreenWidth-100, 20)];
-        [self setlabel:contentLabel title:@"不错不错。非常不错，下次继续，不错不错，非常不错，下次继续"];
-        [reviewView addSubview:contentLabel];
-        if (i==2) {
-            UIView *lastView=[self.view viewWithTag:100+i];
-            _scrollView.contentSize=CGSizeMake(0, CGRectGetMaxY(lastView.frame));
-        }
-    }
-    
+    [headerView addSubview:reviewLabel];
+    return headerView;
 }
 -(void)setLabelWithView:(UIView *)view title:(NSString *)title value:(NSString *)value{
     view.backgroundColor=[UIColor whiteColor];
@@ -135,14 +114,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Table view delegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 4;
 }
-*/
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identify = @"BLDealDetailsCell";
+    BLDealDetailsCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"BLDealDetailsCell" owner:nil options:nil] firstObject];
+    }
+    
+    return cell;
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
 
 @end

@@ -9,6 +9,7 @@
 #import "BLSettingViewController.h"
 #import "UIColor+Extra.h"
 #import "UIFont+Extra.h"
+#import "BLSetInfoViewController.h"
 @interface BLSettingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *nameButton;
 @property (weak, nonatomic) IBOutlet UIButton *sexButton;
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *phoneButton;
 @property (weak, nonatomic) IBOutlet UIButton *passwordButton;
 @property (weak, nonatomic) IBOutlet UIButton *locationButton;
+- (IBAction)setAction:(UIButton *)sender;
 
 @end
 
@@ -81,4 +83,39 @@
 }
 
 
+- (IBAction)setAction:(UIButton *)sender {
+    BLSetInfoViewController *BLSetInfoVC=[[BLSetInfoViewController alloc] init];
+    switch (sender.tag) {
+        case 400:
+            BLSetInfoVC.title=@"昵称";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        case 401:
+            BLSetInfoVC.title=@"性别";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        case 402:
+            BLSetInfoVC.title=@"生日";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        case 403:
+            BLSetInfoVC.title=@"签名";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        case 404:
+            BLSetInfoVC.title=@"手机号码";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        case 405:
+            BLSetInfoVC.title=@"重置密码";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        case 406:
+            BLSetInfoVC.title=@"所在小区";
+            [self.navigationController pushViewController:BLSetInfoVC animated:YES];
+            break;
+        default:
+            break;
+    }
+}
 @end

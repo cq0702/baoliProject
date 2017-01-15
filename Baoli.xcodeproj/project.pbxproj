@@ -75,12 +75,16 @@
 		B09D38021E267ADF00DEDB9B /* 我@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D37FF1E267ADF00DEDB9B /* 我@3x.png */; };
 		B09D38041E267B5600DEDB9B /* backgroud2.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D38031E267B5600DEDB9B /* backgroud2.png */; };
 		B09D38061E2682A000DEDB9B /* backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = B09D38051E2682A000DEDB9B /* backgroud.png */; };
+		B0CCBC1A1E2BC478006BADC4 /* BLSetInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CCBC181E2BC478006BADC4 /* BLSetInfoViewController.m */; };
+		B0CCBC1B1E2BC478006BADC4 /* BLSetInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CCBC191E2BC478006BADC4 /* BLSetInfoViewController.xib */; };
 		B0F53BD51E232EF600F8A3A9 /* BLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */; };
 		B0F53BD61E232EF600F8A3A9 /* BLMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */; };
 		B0F53BDA1E237B1200F8A3A9 /* BLFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BD81E237B1200F8A3A9 /* BLFeedbackViewController.m */; };
 		B0F53BDB1E237B1200F8A3A9 /* BLFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BD91E237B1200F8A3A9 /* BLFeedbackViewController.xib */; };
 		B0F53BE11E23BDAB00F8A3A9 /* BLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F53BDF1E23BDAB00F8A3A9 /* BLSettingViewController.m */; };
 		B0F53BE21E23BDAB00F8A3A9 /* BLSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F53BE01E23BDAB00F8A3A9 /* BLSettingViewController.xib */; };
+		B0FE17121E2BC19E00EFE81B /* BLDealDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FE17101E2BC19E00EFE81B /* BLDealDetailsCell.m */; };
+		B0FE17131E2BC19E00EFE81B /* BLDealDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FE17111E2BC19E00EFE81B /* BLDealDetailsCell.xib */; };
 		CE6D24371E1B6D580069B5FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24361E1B6D580069B5FC /* main.m */; };
 		CE6D243A1E1B6D580069B5FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D24391E1B6D580069B5FC /* AppDelegate.m */; };
 		CE6D243D1E1B6D580069B5FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D243C1E1B6D580069B5FC /* ViewController.m */; };
@@ -205,6 +209,9 @@
 		B09D37FF1E267ADF00DEDB9B /* 我@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我@3x.png"; sourceTree = "<group>"; };
 		B09D38031E267B5600DEDB9B /* backgroud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroud2.png; sourceTree = "<group>"; };
 		B09D38051E2682A000DEDB9B /* backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroud.png; sourceTree = "<group>"; };
+		B0CCBC171E2BC478006BADC4 /* BLSetInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSetInfoViewController.h; sourceTree = "<group>"; };
+		B0CCBC181E2BC478006BADC4 /* BLSetInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSetInfoViewController.m; sourceTree = "<group>"; };
+		B0CCBC191E2BC478006BADC4 /* BLSetInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSetInfoViewController.xib; sourceTree = "<group>"; };
 		B0F53BD21E232EF600F8A3A9 /* BLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMineViewController.h; sourceTree = "<group>"; };
 		B0F53BD31E232EF600F8A3A9 /* BLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMineViewController.m; sourceTree = "<group>"; };
 		B0F53BD41E232EF600F8A3A9 /* BLMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMineViewController.xib; sourceTree = "<group>"; };
@@ -214,6 +221,9 @@
 		B0F53BDE1E23BDAB00F8A3A9 /* BLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSettingViewController.h; sourceTree = "<group>"; };
 		B0F53BDF1E23BDAB00F8A3A9 /* BLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSettingViewController.m; sourceTree = "<group>"; };
 		B0F53BE01E23BDAB00F8A3A9 /* BLSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSettingViewController.xib; sourceTree = "<group>"; };
+		B0FE170F1E2BC19E00EFE81B /* BLDealDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDealDetailsCell.h; sourceTree = "<group>"; };
+		B0FE17101E2BC19E00EFE81B /* BLDealDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDealDetailsCell.m; sourceTree = "<group>"; };
+		B0FE17111E2BC19E00EFE81B /* BLDealDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLDealDetailsCell.xib; sourceTree = "<group>"; };
 		CE6D24321E1B6D580069B5FC /* Baoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6D24361E1B6D580069B5FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE6D24381E1B6D580069B5FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -376,6 +386,9 @@
 				B07A4C121E2528C00001258F /* BLParkingCell.h */,
 				B07A4C131E2528C00001258F /* BLParkingCell.m */,
 				B07A4C141E2528C00001258F /* BLParkingCell.xib */,
+				B0FE170F1E2BC19E00EFE81B /* BLDealDetailsCell.h */,
+				B0FE17101E2BC19E00EFE81B /* BLDealDetailsCell.m */,
+				B0FE17111E2BC19E00EFE81B /* BLDealDetailsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +518,9 @@
 				B07A4C081E25236F0001258F /* BLSendReviewViewController.h */,
 				B07A4C091E25236F0001258F /* BLSendReviewViewController.m */,
 				B07A4C0A1E25236F0001258F /* BLSendReviewViewController.xib */,
+				B0CCBC171E2BC478006BADC4 /* BLSetInfoViewController.h */,
+				B0CCBC181E2BC478006BADC4 /* BLSetInfoViewController.m */,
+				B0CCBC191E2BC478006BADC4 /* BLSetInfoViewController.xib */,
 			);
 			name = mine;
 			sourceTree = "<group>";
@@ -772,8 +788,10 @@
 				B0F53BDB1E237B1200F8A3A9 /* BLFeedbackViewController.xib in Resources */,
 				B09D37B01E265F8700DEDB9B /* 消息-蓝@3x.png in Resources */,
 				B07A4C111E2527EF0001258F /* BLParkingViewController.xib in Resources */,
+				B0FE17131E2BC19E00EFE81B /* BLDealDetailsCell.xib in Resources */,
 				B07A4BF81E2509DB0001258F /* BLMessagesCell.xib in Resources */,
 				B09D37D31E26601000DEDB9B /* 设置@2x.png in Resources */,
+				B0CCBC1B1E2BC478006BADC4 /* BLSetInfoViewController.xib in Resources */,
 				B09D37D21E26601000DEDB9B /* 设置@1x.png in Resources */,
 				B09D37BB1E265FCA00DEDB9B /* 选中@2x.png in Resources */,
 				B09D37CD1E26600900DEDB9B /* 我租到的@2x.png in Resources */,
@@ -893,6 +911,7 @@
 				328404561E2013A0003D0CB3 /* BLHomeInfoViewCell.m in Sources */,
 				328404401E200B2C003D0CB3 /* BLRegisterViewController.m in Sources */,
 				B07A4C101E2527EF0001258F /* BLParkingViewController.m in Sources */,
+				B0CCBC1A1E2BC478006BADC4 /* BLSetInfoViewController.m in Sources */,
 				3284043B1E200822003D0CB3 /* BLLoginViewController.m in Sources */,
 				B07A4C0B1E25236F0001258F /* BLSendReviewViewController.m in Sources */,
 				B07A4BF71E2509DB0001258F /* BLMessagesCell.m in Sources */,
@@ -908,6 +927,7 @@
 				328404491E2010E8003D0CB3 /* BLFindPassWordController.m in Sources */,
 				B0F53BE11E23BDAB00F8A3A9 /* BLSettingViewController.m in Sources */,
 				B07A4BFC1E25132D0001258F /* BLReviewViewController.m in Sources */,
+				B0FE17121E2BC19E00EFE81B /* BLDealDetailsCell.m in Sources */,
 				B07A4C151E2528C00001258F /* BLParkingCell.m in Sources */,
 				B07A4C061E2517AA0001258F /* BLReviewDetailsViewController.m in Sources */,
 				B00E2C401E27CA87006BB816 /* BLPublishViewController.m in Sources */,
